@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cream': '#FFF8E1',
+                        'brand-teal': '#2D6A69',
+                        'brand-orange': '#E57C23',
+                        'brand-brown': '#362419',
+                        'brand-yellow': '#F8D98C',
+                    },
+                    fontFamily: {
+                        'heading': ['Lora', 'serif'],
+                        'body': ['Nunito Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+</head>
+<body class="bg-brand-cream font-body text-brand-brown">
+
+    <header id="header" class="bg-brand-cream/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                 <img class="h-12 w-12" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1aa2482c1f-729b3565f735fe19ff76.png" alt="a minimalist logo of a Baobab tree inside a circle, warm earthy tones, vector style" />
+                <span class="font-heading font-bold text-2xl text-brand-teal">InUnity</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-6 text-base font-semibold">
+                <a href="#home" class="text-brand-teal hover:text-brand-orange transition-colors duration-300">Home</a>
+                <a href="#about" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">About Us</a>
+                <a href="#services" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Services</a>
+                <a href="#programs" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Programs</a>
+                <a href="#resources" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Resources</a>
+                <a href="#blog" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Blog</a>
+                <a href="#involved" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Get Involved</a>
+                <a href="#events" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Events</a>
+                <a href="#contact" class="text-brand-brown hover:text-brand-orange transition-colors duration-300">Contact</a>
+            </div>
+            <a href="#contact" class="hidden lg:block bg-brand-orange text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300">Donate Now</a>
+            <button class="lg:hidden text-brand-teal">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative h-[800px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0f2ec55073-6d9232316e0741f36082.png" alt="A majestic Baobab tree at golden hour with African savanna landscape, warm sunset colors, silhouettes of community gathering beneath the tree, cinematic photography style, natural lighting" />
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+            </div>
+            <div class="container mx-auto px-6 z-10 relative">
+                <div class="max-w-3xl text-white">
+                    <h1 class="font-heading text-6xl md:text-7xl font-bold leading-tight mb-6">Transforming Lives Through Community & Compassion</h1>
+                    <p class="text-xl text-white/90 max-w-2xl mb-8 leading-relaxed">Building stronger communities through trauma-informed counseling, empowerment programs, and inclusive support services. Together, we grow like the Baobab—rooted in strength, reaching toward hope.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#programs" class="bg-brand-orange text-white font-bold py-4 px-10 rounded-lg hover:bg-opacity-90 transition-all duration-300 text-lg text-center">Explore Our Programs</a>
+                        <a href="#involved" class="bg-white/20 backdrop-blur-sm text-white font-bold py-4 px-10 rounded-lg hover:bg-white/30 transition-all duration-300 border-2 border-white text-lg text-center">Get Involved Today</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div id="about-content">
+                        <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">About InUnity</span>
+                        <h2 class="font-heading text-5xl font-bold text-brand-teal mb-6 mt-3">Rooted in Community, Growing Together</h2>
+                        <p class="text-lg text-brand-brown/80 mb-6 leading-relaxed">Like the ancient Baobab tree that provides shelter, nourishment, and strength to entire communities, InUnity stands as a pillar of support for individuals and families seeking healing and empowerment.</p>
+                        <p class="text-lg text-brand-brown/80 mb-8 leading-relaxed">Founded in 2018, we've dedicated ourselves to creating safe, inclusive spaces where diverse voices are heard, trauma is understood, and every person can discover their inherent power to heal and thrive. Our approach honors cultural identities, celebrates diversity, and recognizes that true transformation happens through community connection.</p>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-brand-cream p-6 rounded-lg">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa-solid fa-heart text-brand-orange text-3xl mr-4"></i>
+                                    <h3 class="font-bold text-2xl text-brand-brown">5,000+</h3>
+                                </div>
+                                <p class="text-brand-brown/70">Lives Transformed Through Our Programs</p>
+                            </div>
+                            <div class="bg-brand-cream p-6 rounded-lg">
+                                <div class="flex items-center mb-3">
+                                    <i class="fa-solid fa-users text-brand-orange text-3xl mr-4"></i>
+                                    <h3 class="font-bold text-2xl text-brand-brown">200+</h3>
+                                </div>
+                                <p class="text-brand-brown/70">Dedicated Volunteers & Counselors</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="about-images" class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="h-72 overflow-hidden rounded-2xl shadow-xl">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/965a6938d5-0cc20ed912417db98280.png" alt="Diverse group of people holding hands in a circle outdoors, community gathering, warm natural lighting, documentary photography style" />
+                            </div>
+                            <div class="h-64 overflow-hidden rounded-2xl shadow-xl">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0bc6bf4637-2a2e2c3432a2ff4cf398.png" alt="African woman counselor listening empathetically to client in bright therapy room, plants in background, professional photography" />
+                            </div>
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <div class="h-64 overflow-hidden rounded-2xl shadow-xl">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/eaa098b9cf-09a91fef3e4caba0af2c.png" alt="Multicultural children laughing and playing together in community center, natural light, candid photography" />
+                            </div>
+                            <div class="h-72 overflow-hidden rounded-2xl shadow-xl">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/19c7666362-66447f7a5307d9a525a7.png" alt="Support group session with diverse participants sitting in comfortable chairs, warm and welcoming atmosphere, natural documentary style" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="py-20 bg-brand-teal text-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="font-heading text-4xl font-bold mb-6">Our Mission & Values</h2>
+                    <p class="text-xl text-white/90 mb-12 leading-relaxed">We exist to create pathways to healing, empowerment, and community connection through trauma-informed care that honors every individual's unique journey.</p>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                            <i class="fa-solid fa-shield-heart text-5xl text-brand-orange mb-4"></i>
+                            <h3 class="font-heading text-2xl font-bold mb-3">Compassion</h3>
+                            <p class="text-white/80">Leading with empathy and understanding in every interaction</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                            <i class="fa-solid fa-hands-holding-circle text-5xl text-brand-orange mb-4"></i>
+                            <h3 class="font-heading text-2xl font-bold mb-3">Inclusion</h3>
+                            <p class="text-white/80">Celebrating diversity and creating space for all voices</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl">
+                            <i class="fa-solid fa-seedling text-5xl text-brand-orange mb-4"></i>
+                            <h3 class="font-heading text-2xl font-bold mb-3">Empowerment</h3>
+                            <p class="text-white/80">Supporting individuals to discover their inner strength</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="py-24 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">What We Offer</span>
+                    <h2 class="font-heading text-5xl font-bold text-brand-teal mb-4 mt-3">Comprehensive Support Services</h2>
+                    <p class="text-xl text-brand-brown/70 max-w-3xl mx-auto">From individual counseling to community workshops, we provide holistic support tailored to your unique needs and cultural background.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div id="service-card-1" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-hand-holding-heart text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Trauma-Informed Counseling</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Individual and group therapy sessions that recognize and respond to the impacts of trauma, creating a safe path toward resilience, recovery, and post-traumatic growth.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="service-card-2" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-people-arrows text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Family & Relationship Support</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Strengthen family bonds and improve communication through guided family therapy, couples counseling, and relationship-building workshops designed for lasting change.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="service-card-3" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-lightbulb text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Empowerment Workshops</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Interactive skill-building workshops focused on self-advocacy, leadership development, and personal growth to help you reclaim your narrative and discover your power.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="service-card-4" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-users-rays text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Peer Support Groups</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Facilitated peer-led support groups that foster belonging, shared experience, and mutual support in a safe, confidential, and culturally-responsive environment.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="service-card-5" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-brain text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Mental Health Education</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Community education programs that reduce stigma, increase awareness, and provide practical tools for mental wellness and emotional regulation.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="service-card-6" class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-brand-cream">
+                        <div class="w-16 h-16 bg-brand-orange/10 rounded-full flex items-center justify-center mb-6">
+                            <i class="fa-solid fa-briefcase text-3xl text-brand-orange"></i>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold text-brand-brown mb-4">Career & Life Coaching</h3>
+                        <p class="text-brand-brown/70 mb-6 leading-relaxed">Professional guidance to help you navigate career transitions, develop job skills, and create actionable plans for achieving your personal and professional goals.</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors inline-flex items-center">Learn More <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Featured Programs</span>
+                    <h2 class="font-heading text-5xl font-bold text-brand-teal mb-4 mt-3">Transformative Community Programs</h2>
+                    <p class="text-xl text-brand-brown/70 max-w-3xl mx-auto">Explore our signature programs designed to build resilience, foster deep connection, and inspire meaningful change in individuals and communities.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <div id="program-card-1" class="bg-brand-cream rounded-2xl shadow-xl overflow-hidden group">
+                        <div class="h-72 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8b12c4bcbf-d80160eab5a0f2808725.png" alt="Young diverse teenagers engaged in art therapy, painting colorful murals together, bright creative studio space, natural lighting, documentary photography" />
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Youth Program</span>
+                            <h3 class="font-heading text-3xl font-bold text-brand-brown mb-4 mt-2">Youth Arts & Healing</h3>
+                            <p class="text-brand-brown/80 mb-6 leading-relaxed">A creative expression program for young people ages 13-24 to process experiences and build confidence through art, music, dance, and storytelling in a supportive peer environment.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Weekly creative workshops and art therapy sessions</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Mentorship from professional artists and counselors</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Annual youth art exhibition and performance showcase</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-brand-teal text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div id="program-card-2" class="bg-brand-cream rounded-2xl shadow-xl overflow-hidden group">
+                        <div class="h-72 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/cccf619de2-a590c8859bc3b9be25d3.png" alt="Circle of diverse women of different ages and ethnicities supporting each other in outdoor setting under a large tree, warm golden hour lighting, empowering atmosphere" />
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Women's Program</span>
+                            <h3 class="font-heading text-3xl font-bold text-brand-brown mb-4 mt-2">Women's Empowerment Circle</h3>
+                            <p class="text-brand-brown/80 mb-6 leading-relaxed">A supportive space for women to connect, share, and grow together, focusing on topics of resilience, leadership, self-care, and navigating life transitions with strength and grace.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Bi-weekly facilitated discussion circles</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Leadership development and skills training</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Networking and community-building events</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-brand-teal text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all">Join Circle</a>
+                        </div>
+                    </div>
+                    <div id="program-card-3" class="bg-brand-cream rounded-2xl shadow-xl overflow-hidden group">
+                        <div class="h-72 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/779995a299-3b6561fbea964984240c.png" alt="Multigenerational family participating in family therapy session, sitting together in comfortable living room, warm and safe atmosphere, natural documentary style" />
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Family Program</span>
+                            <h3 class="font-heading text-3xl font-bold text-brand-brown mb-4 mt-2">Family Roots Project</h3>
+                            <p class="text-brand-brown/80 mb-6 leading-relaxed">A comprehensive program designed to strengthen family bonds and improve communication through guided activities, family counseling, and culturally-responsive therapeutic interventions.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Family therapy sessions with licensed counselors</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Interactive family bonding activities and retreats</span>
+                                </li>
+                                <li class="flex items-start text-brand-brown/70">
+                                    <i class="fa-solid fa-check text-brand-orange mr-3 mt-1"></i>
+                                    <span>Parenting workshops and child development resources</span>
+                                </li>
+                            </ul>
+                            <a href="#" class="inline-block bg-brand-teal text-white font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all">Start Journey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="py-24 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Resources</span>
+                    <h2 class="font-heading text-5xl font-bold text-brand-teal mb-4 mt-3">Tools for Your Journey</h2>
+                    <p class="text-xl text-brand-brown/70 max-w-3xl mx-auto">Access free resources, guides, and tools to support your mental health and wellness journey.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <i class="fa-solid fa-book-open text-4xl text-brand-orange mb-4"></i>
+                        <h3 class="font-heading text-xl font-bold text-brand-brown mb-3">Resource Library</h3>
+                        <p class="text-brand-brown/70 mb-4">Downloadable guides, worksheets, and educational materials</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors">Explore <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <i class="fa-solid fa-phone text-4xl text-brand-orange mb-4"></i>
+                        <h3 class="font-heading text-xl font-bold text-brand-brown mb-3">Crisis Support</h3>
+                        <p class="text-brand-brown/70 mb-4">24/7 hotlines and emergency mental health resources</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors">Get Help <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <i class="fa-solid fa-podcast text-4xl text-brand-orange mb-4"></i>
+                        <h3 class="font-heading text-xl font-bold text-brand-brown mb-3">Wellness Podcast</h3>
+                        <p class="text-brand-brown/70 mb-4">Weekly episodes on mental health, healing, and growth</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors">Listen <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all">
+                        <i class="fa-solid fa-calendar-days text-4xl text-brand-orange mb-4"></i>
+                        <h3 class="font-heading text-xl font-bold text-brand-brown mb-3">Webinars</h3>
+                        <p class="text-brand-brown/70 mb-4">Free online workshops and educational webinar series</p>
+                        <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors">Register <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-24 bg-brand-teal text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Community Stories</span>
+                    <h2 class="font-heading text-5xl font-bold mb-4 mt-3">Stories of Transformation</h2>
+                    <p class="text-xl text-white/80 max-w-3xl mx-auto">Hear directly from our community members about their powerful journeys of healing, growth, and empowerment with InUnity.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <div id="video-card-1" class="flex flex-col group">
+                        <div class="relative h-72 rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dbd98874b8-8b04c5ad229285029f82.png" alt="Portrait of confident Hispanic woman in her 30s smiling warmly at camera, outdoor natural setting with soft lighting, professional photography" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center group-hover:bg-black/50 transition-all cursor-pointer">
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-white text-3xl ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <span class="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">5:42</span>
+                            </div>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold mt-6">"Finding My Voice Again"</h3>
+                        <p class="text-white/80 mt-2 leading-relaxed">Maria shares her powerful story of overcoming domestic violence and rebuilding her life through our empowerment workshops and counseling services.</p>
+                        <a href="#" class="text-brand-orange font-bold mt-4 hover:text-brand-yellow transition-colors inline-flex items-center">Watch Full Story <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="video-card-2" class="flex flex-col group">
+                         <div class="relative h-72 rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/51fe315228-98c7f7fe5612b532e5ad.png" alt="Young Black man in his 20s looking thoughtfully at camera, sitting in art studio surrounded by colorful paintings, natural window light, documentary style" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center group-hover:bg-black/50 transition-all cursor-pointer">
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-white text-3xl ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <span class="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">7:18</span>
+                            </div>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold mt-6">"A Path Through Trauma"</h3>
+                        <p class="text-white/80 mt-2 leading-relaxed">David opens up about how art therapy and peer support helped him process childhood trauma and discover his passion for creative expression and helping others.</p>
+                        <a href="#" class="text-brand-orange font-bold mt-4 hover:text-brand-yellow transition-colors inline-flex items-center">Watch Full Story <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div id="video-card-3" class="flex flex-col group">
+                         <div class="relative h-72 rounded-2xl overflow-hidden shadow-2xl">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/59791a3413-b5757534d3a9d8b1a9dd.png" alt="Asian elderly couple smiling warmly at each other while sitting together on comfortable couch, cozy home interior, warm natural lighting, intimate portrait" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-center justify-center group-hover:bg-black/50 transition-all cursor-pointer">
+                                <div class="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="fa-solid fa-play text-white text-3xl ml-1"></i>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <span class="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">6:25</span>
+                            </div>
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold mt-6">"Strengthening Our Family Roots"</h3>
+                        <p class="text-white/80 mt-2 leading-relaxed">The Chen family describes how the Family Roots Project helped them navigate cultural differences, improve communication, and build stronger intergenerational bonds.</p>
+                        <a href="#" class="text-brand-orange font-bold mt-4 hover:text-brand-yellow transition-colors inline-flex items-center">Watch Full Story <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="involved" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="bg-gradient-to-br from-brand-teal to-brand-teal/80 rounded-3xl shadow-2xl overflow-hidden">
+                    <div class="grid lg:grid-cols-2 gap-0">
+                        <div id="involved-image-container" class="h-full min-h-[500px]">
+                            <img class="w-full h-full object-cover" src="https://i.ibb.co.com/VcrmsyNG/tree-8559409-1280.webp" alt="Diverse group of volunteers of all ages planting a young Baobab tree together, hands in soil, community garden setting, golden hour lighting, hopeful and inspiring atmosphere" />
+                        </div>
+                        <div id="involved-content" class="p-12 lg:p-16 text-white flex flex-col justify-center">
+                            <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Get Involved</span>
+                            <h2 class="font-heading text-5xl font-bold mb-6 mt-3">Be Part of the Change</h2>
+                            <p class="text-xl text-white/90 mb-8 leading-relaxed">Your support—whether through volunteering, donations, or partnerships—directly impacts lives and helps us continue our vital work in building stronger, more resilient communities.</p>
+                            <div class="space-y-4 mb-10">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-hand-holding-dollar text-brand-orange text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-xl mb-1">Make a Donation</h3>
+                                        <p class="text-white/80">Every contribution helps fund programs and services</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-hands-helping text-brand-orange text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-xl mb-1">Volunteer Your Time</h3>
+                                        <p class="text-white/80">Share your skills and passion with our community</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-handshake text-brand-orange text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-bold text-xl mb-1">Partner With Us</h3>
+                                        <p class="text-white/80">Collaborate to create greater community impact</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                 <a href="#" class="bg-brand-orange text-white font-bold py-4 px-10 rounded-lg hover:bg-opacity-90 transition-all duration-300 text-center text-lg">Donate Today</a>
+                                 <a href="#" class="bg-white text-brand-teal font-bold py-4 px-10 rounded-lg hover:bg-gray-100 transition-all duration-300 text-center text-lg">Volunteer Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="py-24 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Upcoming Events</span>
+                    <h2 class="font-heading text-5xl font-bold text-brand-teal mb-4 mt-3">Join Us at Our Next Event</h2>
+                    <p class="text-xl text-brand-brown/70 max-w-3xl mx-auto">Connect with community, learn new skills, and be part of something meaningful.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div id="event-card-1" class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-48 h-64 md:h-auto overflow-hidden flex-shrink-0">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d0ab1ce23-526840eb1b6e84a9c902.png" alt="Community wellness fair with diverse people at outdoor booths, colorful tents, sunny day, vibrant and welcoming atmosphere" />
+                        </div>
+                        <div class="p-8 flex flex-col justify-between flex-grow">
+                            <div>
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <div class="bg-brand-orange text-white text-center p-3 rounded-lg">
+                                        <div class="text-2xl font-bold">15</div>
+                                        <div class="text-xs uppercase">Jan</div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-heading text-2xl font-bold text-brand-brown">Community Wellness Fair</h3>
+                                        <p class="text-brand-brown/70 flex items-center mt-1">
+                                            <i class="fa-solid fa-clock mr-2 text-brand-orange"></i>
+                                            10:00 AM - 4:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-brand-brown/80 mb-4">Free health screenings, wellness workshops, family activities, and community resources. Open to all!</p>
+                                <p class="text-brand-brown/70 flex items-center">
+                                    <i class="fa-solid fa-location-dot mr-2 text-brand-orange"></i>
+                                    Central Community Park
+                                </p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all text-center">Register Free</a>
+                        </div>
+                    </div>
+                    <div id="event-card-2" class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-48 h-64 md:h-auto overflow-hidden flex-shrink-0">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e08d7e85fd-c5bf3945b24127c5261f.png" alt="Yoga and meditation class with diverse participants in peaceful studio with plants, calm and serene atmosphere, natural light" />
+                        </div>
+                        <div class="p-8 flex flex-col justify-between flex-grow">
+                            <div>
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <div class="bg-brand-orange text-white text-center p-3 rounded-lg">
+                                        <div class="text-2xl font-bold">22</div>
+                                        <div class="text-xs uppercase">Jan</div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-heading text-2xl font-bold text-brand-brown">Mindfulness & Self-Care Workshop</h3>
+                                        <p class="text-brand-brown/70 flex items-center mt-1">
+                                            <i class="fa-solid fa-clock mr-2 text-brand-orange"></i>
+                                            6:00 PM - 8:30 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-brand-brown/80 mb-4">Learn practical mindfulness techniques and self-care strategies for managing stress and building resilience.</p>
+                                <p class="text-brand-brown/70 flex items-center">
+                                    <i class="fa-solid fa-location-dot mr-2 text-brand-orange"></i>
+                                    InUnity Center, Room 201
+                                </p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all text-center">Reserve Spot</a>
+                        </div>
+                    </div>
+                    <div id="event-card-3" class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-48 h-64 md:h-auto overflow-hidden flex-shrink-0">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d4d9babf85-8c80ec15153a575a158b.png" alt="Art exhibition gallery with diverse artwork on walls, people viewing and discussing art, cultural celebration atmosphere" />
+                        </div>
+                        <div class="p-8 flex flex-col justify-between flex-grow">
+                            <div>
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <div class="bg-brand-orange text-white text-center p-3 rounded-lg">
+                                        <div class="text-2xl font-bold">05</div>
+                                        <div class="text-xs uppercase">Feb</div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-heading text-2xl font-bold text-brand-brown">Youth Art Exhibition Opening</h3>
+                                        <p class="text-brand-brown/70 flex items-center mt-1">
+                                            <i class="fa-solid fa-clock mr-2 text-brand-orange"></i>
+                                            5:00 PM - 8:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-brand-brown/80 mb-4">Celebrate the creative work of our Youth Arts & Healing program participants. Art, music, and refreshments.</p>
+                                <p class="text-brand-brown/70 flex items-center">
+                                    <i class="fa-solid fa-location-dot mr-2 text-brand-orange"></i>
+                                    Downtown Arts Gallery
+                                </p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all text-center">RSVP Now</a>
+                        </div>
+                    </div>
+                    <div id="event-card-4" class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                        <div class="md:w-48 h-64 md:h-auto overflow-hidden flex-shrink-0">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8be58592b7-68c95071a2233c313840.png" alt="Professional training session with diverse group taking notes, presenter at front, modern conference room setting" />
+                        </div>
+                        <div class="p-8 flex flex-col justify-between flex-grow">
+                            <div>
+                                <div class="flex items-center space-x-4 mb-4">
+                                    <div class="bg-brand-orange text-white text-center p-3 rounded-lg">
+                                        <div class="text-2xl font-bold">12</div>
+                                        <div class="text-xs uppercase">Feb</div>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-heading text-2xl font-bold text-brand-brown">Trauma-Informed Care Training</h3>
+                                        <p class="text-brand-brown/70 flex items-center mt-1">
+                                            <i class="fa-solid fa-clock mr-2 text-brand-orange"></i>
+                                            9:00 AM - 5:00 PM
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="text-brand-brown/80 mb-4">Professional development workshop for educators, healthcare workers, and community leaders. CEUs available.</p>
+                                <p class="text-brand-brown/70 flex items-center">
+                                    <i class="fa-solid fa-location-dot mr-2 text-brand-orange"></i>
+                                    InUnity Training Center
+                                </p>
+                            </div>
+                            <a href="#" class="mt-6 inline-block bg-brand-teal text-white font-bold py-3 px-6 rounded-lg hover:bg-opacity-90 transition-all text-center">Enroll ($50)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-block bg-brand-teal text-white font-bold py-4 px-10 rounded-lg hover:bg-opacity-90 transition-all text-lg">View Full Calendar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Latest Insights</span>
+                    <h2 class="font-heading text-5xl font-bold text-brand-teal mb-4 mt-3">From Our Blog</h2>
+                    <p class="text-xl text-brand-brown/70 max-w-3xl mx-auto">Expert insights, personal stories, and practical resources for your healing and growth journey.</p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-10">
+                    <article id="blog-post-1" class="bg-brand-cream rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:shadow-2xl transition-all">
+                        <div class="h-64 overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://i.ibb.co.com/DPDxZJrp/tree-8559425-1280.webp" alt="Person meditating peacefully under a large Baobab tree at sunset, silhouette style, warm golden and purple tones, serene and spiritual atmosphere" />
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <span class="bg-brand-orange/10 text-brand-orange font-semibold text-sm px-4 py-1 rounded-full">Mental Wellness</span>
+                                <span class="text-brand-brown/50 text-sm">8 min read</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-brand-brown mb-3 flex-grow group-hover:text-brand-teal transition-colors">The Transformative Power of Mindfulness in Trauma Recovery</h3>
+                            <p class="text-brand-brown/70 mb-6">Discover how mindfulness practices can help rewire the brain, reduce anxiety, and create new pathways for healing after traumatic experiences.</p>
+                            <div class="flex items-center justify-between mt-auto pt-6 border-t border-brand-brown/10">
+                                <div class="flex items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPlGe8WNEJqTCuFgiq2L-8hELqZvSbmCyWhA&s" class="w-12 h-12 rounded-full mr-3" alt="Author">
+                                    <div>
+                                        <p class="font-bold text-brand-brown">Dr. Anya Sharma</p>
+                                        <p class="text-sm text-brand-brown/60">Dec 01, 2025</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="blog-post-2" class="bg-brand-cream rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:shadow-2xl transition-all">
+                        <div class="h-64 overflow-hidden">
+                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/035e8bcaac-3e1eef4aee64a6f9424f.png" alt="Abstract art showing colorful threads weaving together into beautiful tapestry pattern, symbolizing community diversity and unity, vibrant colors" />
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <span class="bg-brand-orange/10 text-brand-orange font-semibold text-sm px-4 py-1 rounded-full">Community</span>
+                                <span class="text-brand-brown/50 text-sm">6 min read</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-brand-brown mb-3 flex-grow group-hover:text-brand-teal transition-colors">Weaving Stronger Communities: The Essential Role of Connection</h3>
+                            <p class="text-brand-brown/70 mb-6">Explore the science behind social connection and learn practical ways to build meaningful relationships that support mental health and resilience.</p>
+                             <div class="flex items-center justify-between mt-auto pt-6 border-t border-brand-brown/10">
+                                <div class="flex items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDjj4FYuHLSMiO_VLOQZ_Vkaya2jWw86WQCQ&s" class="w-12 h-12 rounded-full mr-3" alt="Author">
+                                    <div>
+                                        <p class="font-bold text-brand-brown">James Okoro</p>
+                                        <p class="text-sm text-brand-brown/60">Nov 22, 2025</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="blog-post-3" class="bg-brand-cream rounded-2xl shadow-lg overflow-hidden flex flex-col group hover:shadow-2xl transition-all">
+                        <div class="h-64 overflow-hidden">
+                             <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://i.ibb.co.com/1tPVKrDB/tree-8559418-1280.webp" alt="Winding path through beautiful natural landscape leading toward bright sunrise on horizon, symbolizing hope and journey of healing, inspirational photography" />
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <span class="bg-brand-orange/10 text-brand-orange font-semibold text-sm px-4 py-1 rounded-full">Healing Journey</span>
+                                <span class="text-brand-brown/50 text-sm">10 min read</span>
+                            </div>
+                            <h3 class="font-heading text-2xl font-bold text-brand-brown mb-3 flex-grow group-hover:text-brand-teal transition-colors">Your Healing Journey: A Comprehensive Guide to Self-Compassion</h3>
+                            <p class="text-brand-brown/70 mb-6">Learn why self-compassion is crucial for healing, and discover evidence-based practices to cultivate kindness toward yourself during difficult times.</p>
+                             <div class="flex items-center justify-between mt-auto pt-6 border-t border-brand-brown/10">
+                                <div class="flex items-center">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYp72vGB3xgCRszTGf5CLcqFRelUZPsHo-g&s" class="w-12 h-12 rounded-full mr-3" alt="Author">
+                                    <div>
+                                        <p class="font-bold text-brand-brown">Elena Rodriguez</p>
+                                        <p class="text-sm text-brand-brown/60">Nov 15, 2025</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="text-brand-teal font-bold hover:text-brand-orange transition-colors"><i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="inline-block bg-brand-teal text-white font-bold py-4 px-10 rounded-lg hover:bg-opacity-90 transition-all text-lg">Read More Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div id="contact-info">
+                        <span class="text-brand-orange font-bold text-sm uppercase tracking-wider">Get In Touch</span>
+                        <h2 class="font-heading text-5xl font-bold text-brand-teal mb-6 mt-3">We're Here to Help</h2>
+                        <p class="text-xl text-brand-brown/80 mb-10 leading-relaxed">Have questions about our programs? Need support? Want to get involved? We'd love to hear from you. Reach out and let's start a conversation.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-brand-teal/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot text-brand-teal text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-brand-brown mb-1">Visit Us</h3>
+                                    <p class="text-brand-brown/70">123 Community Lane<br>Unityville, State 45678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-brand-teal/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-phone text-brand-teal text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-brand-brown mb-1">Call Us</h3>
+                                    <p class="text-brand-brown/70">Main: (555) 123-4567<br>Crisis Line: (555) 123-4568</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-brand-teal/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-envelope text-brand-teal text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-brand-brown mb-1">Email Us</h3>
+                                    <p class="text-brand-brown/70">connect@inunity.one<br>support@inunity.one</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-14 h-14 bg-brand-teal/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fa-solid fa-clock text-brand-teal text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-brand-brown mb-1">Office Hours</h3>
+                                    <p class="text-brand-brown/70">Mon-Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact-form" class="bg-white p-10 rounded-2xl shadow-xl">
+                        <h3 class="font-heading text-3xl font-bold text-brand-brown mb-6">Send Us a Message</h3>
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-brand-brown font-semibold mb-2">First Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-brand-brown font-semibold mb-2">Last Name</label>
+                                    <input type="text" class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-brand-brown font-semibold mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-brand-brown font-semibold mb-2">Phone Number</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal" placeholder="(555) 123-4567">
+                            </div>
+                            <div>
+                                <label class="block text-brand-brown font-semibold mb-2">How Can We Help?</label>
+                                <select class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal">
+                                    <option>General Inquiry</option>
+                                    <option>Program Information</option>
+                                    <option>Counseling Services</option>
+                                    <option>Volunteer Opportunities</option>
+                                    <option>Partnership/Collaboration</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-brand-brown font-semibold mb-2">Your Message</label>
+                                <textarea rows="5" class="w-full px-4 py-3 border border-brand-brown/20 rounded-lg focus:outline-none focus:border-brand-teal" placeholder="Tell us more about how we can help..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-orange text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-all text-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-brand-brown text-brand-cream">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="footer-brand" class="col-span-1 md:col-span-1">
+                     <a href="#" class="flex items-center space-x-2 mb-4">
+                        <img class="h-10 w-10" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1aa2482c1f-98f4ada1ffc4fe7670da.png" alt="a minimalist logo of a Baobab tree inside a circle, cream color on a dark brown background, vector style" />
+                        <span class="font-heading font-bold text-2xl text-white">InUnity</span>
+                    </a>
+                    <p class="text-brand-cream/70 mb-6">Transforming Community Through Empowerment and Counseling.</p>
+                    <p class="text-brand-cream/50 text-sm">©2025 InUnity. All rights reserved.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-brand-cream/70 hover:bg-white/20 hover:text-white transition-all"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-brand-cream/70 hover:bg-white/20 hover:text-white transition-all"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-brand-cream/70 hover:bg-white/20 hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-brand-cream/70 hover:bg-white/20 hover:text-white transition-all"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div id="footer-links-1">
+                    <h4 class="font-bold text-lg mb-4 font-heading text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-brand-cream/70 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-brand-cream/70 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#programs" class="text-brand-cream/70 hover:text-white transition-colors">Programs</a></li>
+                        <li><a href="#resources" class="text-brand-cream/70 hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="#events" class="text-brand-cream/70 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="#blog" class="text-brand-cream/70 hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                 <div id="footer-links-2">
+                    <h4 class="font-bold text-lg mb-4 font-heading text-white">Get Involved</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-brand-cream/70 hover:text-white transition-colors">Volunteer</a></li>
+                        <li><a href="#" class="text-brand-cream/70 hover:text-white transition-colors">Donate</a></li>
+                        <li><a href="#" class="text-brand-cream/70 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-brand-cream/70 hover:text-white transition-colors">Partnerships</a></li>
+                        <li><a href="#" class="text-brand-cream/70 hover:text-white transition-colors">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div id="footer-newsletter">
+                    <h4 class="font-bold text-lg mb-4 font-heading text-white">Stay Connected</h4>
+                    <p class="text-brand-cream/70 mb-4">Subscribe to our newsletter for updates, resources, and inspiration.</p>
+                    <form class="flex flex-col space-y-3">
+                        <input type="email" placeholder="Your email address" class="px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/40">
+                        <button type="submit" class="bg-brand-orange text-white font-bold py-3 rounded-lg hover:bg-opacity-90 transition-all">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div class="container mx-auto px-6 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-brand-cream/60">
+                    <p>Designed with ❤️ for community healing and empowerment</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="hover:text-white transition-colors">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
